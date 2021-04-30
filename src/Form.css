@@ -1,9 +1,8 @@
 .form-content-right {
-  background-color: blanchedalmond;
   align-content: center;
 }
 .form {
-  margin: 0 200px 0 200px;
+  margin: 0 650px 0 650px;
   padding: 30px 0 30px 0;
   background: linear-gradient(to right, #009900 0%, #ffcc00 100%);
   border-radius: 10%;
@@ -20,7 +19,7 @@ h1 {
   color: white;
 }
 .form-inputs {
-  margin: 0 122px 20px 122px;
+  margin: 0 150px 20px 150px;
 }
 .form-content-right .form-inputs label {
   font-size: 15px;
@@ -40,4 +39,8 @@ button {
   border-radius: 5%;
   background: linear-gradient(to right, #009900 0%, #ffcc00 100%);
   color: white;
+}
+
+.form-success {
+  background-color: #99ff99;
 }
