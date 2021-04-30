@@ -13,7 +13,7 @@ const FormSignup = ({ submitForm }) => {
           <label htmlFor="username" className="form-label">
             Username
           </label>
-          <input id="username" type="text" name="username" className="form-input" placeholder="Masukkan username" value={values.username} onChange={handleChange} />
+          <input id="username" type="text" name="username" className="form-input" placeholder="Masukkan username" onChange={handleChange} />
           {errors.username && <p>{errors.username}</p>}
         </div>
 
@@ -21,7 +21,7 @@ const FormSignup = ({ submitForm }) => {
           <label htmlFor="nim" className="form-label">
             NIM
           </label>
-          <input id="nim" type="text" name="nim" className="form-input" placeholder="Masukkan NIM" value={values.nim} onChange={handleChange} />
+          <input id="nim" type="text" name="nim" className="form-input" placeholder="Masukkan NIM" onChange={handleChange} />
           {errors.nim && <p>{errors.nim}</p>}
         </div>
 
@@ -29,7 +29,7 @@ const FormSignup = ({ submitForm }) => {
           <label htmlFor="email" className="form-label">
             Email
           </label>
-          <input id="email" type="email" name="email" className="form-input" placeholder="Masukkan email ITERA" value={values.email} onChange={handleChange} />
+          <input id="email" type="text" name="email" className="form-input" placeholder="Masukkan email ITERA" onChange={handleChange} />
           {errors.email && <p>{errors.email}</p>}
         </div>
 
@@ -37,7 +37,7 @@ const FormSignup = ({ submitForm }) => {
           <label htmlFor="phone" className="form-label">
             Nomor HP
           </label>
-          <input id="phone" type="text" name="phone" className="form-input" placeholder="ex/: 080011112222" value={values.phone} onChange={handleChange} />
+          <input id="phone" type="text" name="phone" className="form-input" placeholder="ex/: 080011112222" onChange={handleChange} />
           {errors.phone && <p>{errors.phone}</p>}
         </div>
 
@@ -45,7 +45,7 @@ const FormSignup = ({ submitForm }) => {
           <label htmlFor="address" className="form-label">
             Alamat
           </label>
-          <input id="address" type="text" name="address" className="form-input" placeholder="Masukkan alamat" value={values.address} onChange={handleChange} />
+          <input id="address" type="text" name="address" className="form-input" placeholder="Masukkan alamat" onChange={handleChange} />
           {errors.address && <p>{errors.address}</p>}
         </div>
 
@@ -53,7 +53,7 @@ const FormSignup = ({ submitForm }) => {
           <label htmlFor="password" className="form-label">
             Password
           </label>
-          <input id="password" type="password" name="password" className="form-input" placeholder="Masukkan password" value={values.password} onChange={handleChange} />
+          <input id="password" type="password" name="password" className="form-input" placeholder="Masukkan password" onChange={handleChange} />
           {errors.password && <p>{errors.password}</p>}
         </div>
 
@@ -61,7 +61,7 @@ const FormSignup = ({ submitForm }) => {
           <label htmlFor="password2" className="form-label">
             Konfirmasi Password
           </label>
-          <input id="password2" type="password" name="password2" className="form-input" placeholder="Masukkan konfirmasi password" value={values.password2} onChange={handleChange} />
+          <input id="password2" type="password" name="password2" className="form-input" placeholder="Masukkan konfirmasi password" onChange={handleChange} />
           {errors.password2 && <p>{errors.password2}</p>}
         </div>
 

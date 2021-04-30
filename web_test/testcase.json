@@ -1,0 +1,236 @@
+[
+  {
+    "testcase_name": "Field username kosong",
+    "data": {
+      "username": "",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Username tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Username sudah digunakan",
+    "data": {
+      "username": "dewakipas",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Username sudah dipakai"
+  },
+  {
+    "testcase_name": "Field email kosong",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Email tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Email tidak valid",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto@",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Email tidak valid"
+  },
+  {
+    "testcase_name": "Tidak menggunakan email ITERA",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@gmail.com",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Email harus menggunakan email ITERA"
+  },
+  {
+    "testcase_name": "Email sudah digunakan",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "angsa.118140901@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Email sudah dipakai"
+  },
+  {
+    "testcase_name": "Field NIM kosong",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "NIM tidak boleh kosong"
+  },
+  {
+    "testcase_name": "NIM mengandung karakter non numeric",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500a",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "NIM tidak valid"
+  },
+  {
+    "testcase_name": "NIM sudah digunakan",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140901",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "NIM sudah dipakai"
+  },
+  {
+    "testcase_name": "Field nomor HP kosong",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Nomor HP tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Nomor HP mengandung karakter non numeric",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001a",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Nomor HP tidak valid"
+  },
+  {
+    "testcase_name": "Nomor HP sudah digunakan",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089790210212",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Nomor HP sudah digunakan"
+  },
+  {
+    "testcase_name": "Field password kosong",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "",
+      "password2": "ini123pass"
+    },
+    "expected": "Password tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Password kurang dari 8 karakter",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123s",
+      "password2": "ini123pass"
+    },
+    "expected": "Password harus terdiri dari 8 karakter atau lebih"
+  },
+  {
+    "testcase_name": "Field konfirmasi password kosong",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": ""
+    },
+    "expected": "Confirmation password tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Password konfirmasi tidak cocok",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini13pass"
+    },
+    "expected": "Confirmation password tidak cocok"
+  },
+  {
+    "testcase_name": "Field alamat kosong",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Registrasi berhasil!"
+  },
+  {
+    "testcase_name": "Seluruh field terisi dengan benar",
+    "data": {
+      "username": "bintangdilangit",
+      "nim": "118140500",
+      "email": "naruto.118140500@student.itera.ac.id",
+      "phone": "089780005001",
+      "address": "Jl. Sudirman",
+      "password": "ini123pass",
+      "password2": "ini123pass"
+    },
+    "expected": "Registrasi berhasil"
+  }
+]
