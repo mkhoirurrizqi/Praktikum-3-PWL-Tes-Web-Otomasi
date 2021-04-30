@@ -1,0 +1,43 @@
+.form-content-right {
+  background-color: blanchedalmond;
+  align-content: center;
+}
+.form {
+  margin: 0 200px 0 200px;
+  padding: 30px 0 30px 0;
+  background: linear-gradient(to right, #009900 0%, #ffcc00 100%);
+  border-radius: 10%;
+}
+
+.form-inputs p {
+  color: red;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 12px;
+}
+h1 {
+  font-size: 25px;
+  color: white;
+}
+.form-inputs {
+  margin: 0 122px 20px 122px;
+}
+.form-content-right .form-inputs label {
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 3px;
+  color: white;
+}
+.form-content-right .form-inputs input {
+  width: 300px;
+  border-radius: 5%;
+  border: 0px;
+}
+button {
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5%;
+  background: linear-gradient(to right, #009900 0%, #ffcc00 100%);
+  color: white;
+}
