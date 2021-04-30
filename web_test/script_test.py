@@ -12,7 +12,7 @@ obj = json.loads(json_data)
 
 PATH = "D:/Data/Project/chromedriver.exe"
 driver = webdriver.Chrome(PATH)
-driver.get("http://localhost:3000/")
+driver.get("https://register-mhs.herokuapp.com")
 username_input = driver.find_element_by_id('username')
 nim_input = driver.find_element_by_id('nim')
 email_input = driver.find_element_by_id('email')
