@@ -33,12 +33,24 @@ const validateInfo = (values) => {
     errors.nim = "NIM tidak boleh kosong";
   } else if (!/^[0-9]*$/i.test(values.nim)) {
     errors.nim = "NIM tidak valid";
+  } else if (values.nim) {
+    for (const nDummy of nimDummy) {
+      if (nDummy === values.nim) {
+        errors.nim = "NIM sudah dipakai";
+      }
+    }
   }
 
   if (!values.phone) {
     errors.phone = "Nomor HP tidak boleh kosong";
   } else if (!/^[0-9]*$/i.test(values.phone)) {
     errors.phone = "Nomor HP tidak valid";
+  } else if (values.phone) {
+    for (const pDummy of phoneDummy) {
+      if (pDummy === values.phone) {
+        errors.phone = "Nomor HP telah dipakai";
+      }
+    }
   }
 
   if (!values.password) {
